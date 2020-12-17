@@ -1,0 +1,21 @@
+﻿<Window x:Class="wfpClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wfpClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="638" Width="982" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,-4,-18,-14">
+        <Label Content="用户名" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="72,16,0,0" Text="bob" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="密码" Margin="229,14,696,0" VerticalAlignment="Top" RenderTransformOrigin="8.018,1.229"/>
+        <TextBox x:Name="txtPass" HorizontalAlignment="Left" Margin="301,16,0,0" Text="bob" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRequestToken" Content="1.请求Access Token" HorizontalAlignment="Left" Margin="24,54,0,0" VerticalAlignment="Top" Click="btnRequestToken_Click" Width="600"/>
+        <Button x:Name="AccessApi" Content="2.请求API资源" HorizontalAlignment="Left" Margin="19,323,0,0" VerticalAlignment="Top" Click="AccessApi_Click" Width="600"/>
+        <TextBlock x:Name="txtToken" HorizontalAlignment="Left" Margin="33,90,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="207" Width="924" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        <TextBlock x:Name="txtApiStr" HorizontalAlignment="Left" Margin="27,359,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="116" Width="924" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        <TextBlock x:Name="txtIdtStr" HorizontalAlignment="Left" Margin="27,527,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="930"/>
+        <Button x:Name="btnRequestIdtResource" Content="3.请求Identity资源" HorizontalAlignment="Left" Margin="33,491,0,0" VerticalAlignment="Top" Width="600" Click="btnRequestIdtResource_Click"/>
+    </Grid>
+</Window>
